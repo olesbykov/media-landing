@@ -1,0 +1,1186 @@
+/* General */
+:root {
+  --base-font-size: 16px;
+  --white: #fff;
+  --pink: #E93A7D;
+  --pink-hover: #D71862;
+  --bg-dark: #222228;
+  --text-light: var(--white);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --switcher-color: #25DAC5;
+}
+
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--white);
+  color: #1E0E62;
+  font-size: var(--base-font-size);
+}
+
+.section {
+  padding: 100px 115px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-dark {
+  background-color: var(--bg-dark);
+}
+
+.container {
+  /* max-width: 1400px;
+  width: 100%; */
+  padding: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 124%;
+}
+
+/* Кнопки */
+button {
+  border: 0;
+  margin: unset;
+}
+
+.btn {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.btn-pink {
+  background-color: var(--pink);
+  color: var(--white);
+  border-radius: 100px;
+  padding: 12px 30px;
+}
+
+.btn-pink:hover {
+  background-color: var(--pink-hover);
+  color: var(--white);
+}
+
+.btn-outline-light {
+  border-radius: 100px;
+  padding: 12px 30px;
+}
+
+.switcher {
+  gap: 30px;
+}
+
+.switcher label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: var(--base-font-size);
+  line-height: 162%;
+  text-align: right;
+  color: var(--white);
+}
+
+.switcher .form-check-input {
+  background-color: var(--switcher-color);
+  border-color: var(--switcher-color);
+  width: 57px;
+  height: 30px;
+  margin-top: 0;
+}
+
+.switcher .form-check-input:checked {
+  background-color: var(--switcher-color);
+  border-color: var(--switcher-color);
+}
+
+.switcher .form-check-input:focus {
+  background-color: var(--switcher-color);
+  border-color: var(--switcher-color);
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+/* Плеер */
+.video-player {
+  width: 100%;
+  max-width: 770px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+  margin: auto;
+
+  video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+
+  .card-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: var(--pink);
+    border-radius: 100px;
+    color: var(--white);
+    border: none;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: var(--pink-hover);
+    }
+  }
+}
+
+/* Навигация */
+.navigation {
+  min-height: 90px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.navigation .container {
+  padding: 0;
+  max-width: calc(1400px - 2 * 118px);
+}
+
+.nav-login {
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+#nav ul {
+  font-weight: 500;
+  font-size: 15px;
+  color: #1b1b1c;
+  gap: 35px;
+}
+
+/* Обложка */
+.hero {
+  background: linear-gradient(0deg, rgba(47, 24, 147, 0.3), rgba(47, 24, 147, 0.3)),
+              linear-gradient(180deg, rgba(0, 0, 0, 0.5) 6.36%, rgba(0, 0, 0, 0) 16.49%),
+              url('/img/ilnur-kalimullin-332587-unsplash.jpg') center/cover no-repeat;
+  color: var(--white);
+  /* padding: 100px 115px; */
+  /* min-height: 80vh; */
+  min-height: 900px;
+  /* max-width: 1400px;
+  width: 100%;
+  margin: 0 auto; */
+}
+
+.hero h1 {
+  /* font-weight: 700; */
+  font-size: 58px;
+  line-height: 70px;
+  letter-spacing: -1px;
+  /* margin-bottom: 20px; */
+  letter-spacing: 1px;
+  max-width: 830px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  mix-blend-mode: normal;
+  /* margin: 0; */
+  letter-spacing: 0.7px;
+  max-width: 830px;
+}
+
+/* Галерея */
+/* .gallery {
+  padding: 100px 115px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+} */
+
+.gallery-column {
+  gap: 30px;
+  margin-left: 8px;
+  margin-right: 22px;
+  width: 370px;
+  padding: 0;
+}
+
+.gallery-column:last-of-type {
+  margin-right: 0;
+}
+
+/* Уникальность */
+.originality {
+  padding: 100px 215px 177px 215px;
+}
+
+.originality h2 {
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: var(--white);
+  max-width: 594px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.originality .video-player {
+  margin-bottom: 55px;
+}
+
+.video-cards-row {
+  gap: 30px;
+}
+
+.video-card {
+  gap: 6px;
+  height: 110px;
+  max-width: 470px;
+  padding: 0;
+}
+
+.video-card .preview {
+  width: 170px;
+  min-width: 170px;
+  height: 110px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.video-card .play-icon {
+  font-size: 20px;
+  color: var(--white);
+  z-index: 1;
+}
+
+.video-text {
+  color: var(--white);
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.video-text .label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  line-height: 26px;
+  margin: 0;
+}
+
+.video-text .desc {
+  font-size: var(--base-font-size);
+  letter-spacing: 0.7px;
+  line-height: 26px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* Конструктор сайтов */
+.tech {
+  /* padding-right: 0; */
+  /* padding: 80px 0 80px 115px; */
+  padding: 0 0 0 115px;
+}
+
+.tech-row {
+  min-height: 852px;
+  gap: 229px;
+}
+
+.tech h2 {
+  letter-spacing: 1.2px;
+  text-align: left;
+  max-width: 571px;
+  margin: auto;
+  margin-left: 0;
+  margin-bottom: 24px;
+  /* margin-top: -20px; */
+}
+
+.tech .lead {
+  max-width: 571px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 145%;
+  letter-spacing: 1.01px;
+  color: rgba(21, 20, 57, 0.4);
+  margin-bottom: 32px;
+}
+
+.tech .btn {
+  max-width: 160px;
+}
+
+.tech .text-col {
+  /* align-content: space-between; */
+  margin: 0;
+  max-width: 571px;
+  padding-top: 100px;
+  gap: 120px;
+}
+
+.tech .img-col {
+  background-size: cover;
+  background-position: center;
+  background-image: url('/img/building.png');
+  height: 852px;
+  width: 485px;
+}
+
+/* .tech-cards {
+  margin-top: 120px;
+} */
+
+.tech-cards h6 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 145%;
+}
+
+.tech-cards p {
+  font-weight: 400;
+  font-size: var(--base-font-size);
+  line-height: 162%;
+  color: rgba(21, 20, 57, 0.4);
+  letter-spacing: 1px;
+  max-width: 270px;
+}
+
+.tech .icon svg {
+  display: block;
+}
+
+/* Тарифы */
+.tariff {
+  padding: 100px 315px;
+}
+
+.tariff h2 {
+  max-width: 571px;
+  margin: auto;
+  margin-bottom: 42px;
+}
+
+.tariff .switcher {
+  margin-bottom: 40px;
+}
+
+.tariff-card {
+  background-color: #34343D;
+  border: 2px solid #EBEAED;
+  border-radius: 24px;
+}
+
+.tariff-card h5 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: -5px;
+}
+
+.tariff-card-header {
+  justify-content: space-between;
+  margin-bottom: 8px;
+  width: 303px;
+}
+
+.tariff-card p {
+  font-size: var(--base-font-size);
+  line-height: 26px;
+  opacity: 0.8;
+}
+
+.tariff-card-img {
+  width: 370px;
+  height: 210px;
+  border-radius: 24px 24px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.tariff-card-img-first {
+  background-image: url('/img/Photo@2x-5.png');
+}
+
+.tariff-card-img-second {
+  background-image: url('/img/Photo@2x-4.png');
+}
+
+.tariff-card-text-block {
+  border-top: 2px solid #EBEAED;
+  padding: 40px 32px;
+  width: 370px;
+  height: 332px;
+  align-content: space-between;
+}
+
+.tariff-card .btn {
+    margin-bottom: 4px;
+  }
+
+
+/* 
+.gallery img {
+  border-radius: 16px;
+} */
+
+/* Модальные окна */
+.modal-window {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg-dark);
+  padding: 56px 48px;
+  border-radius: 10px;
+  width: 570px;
+  max-width: 100%;
+  z-index: 1000;
+  color: var(--text-light);
+}
+
+.modal-window.active {
+  display: block;
+}
+
+.modal-window-header {
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.modal-window-subtext {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 56px;
+}
+
+.modal-window input[type="email"],
+.modal-window input[type="text"],
+.modal-window input[type="tel"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--text-muted);
+  width: 100%;
+  padding: 8px 0;
+  margin: 15px 0;
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+.modal-window input[type="tel"] {
+  margin-bottom: 56px;
+}
+
+.modal-window .btn {
+  margin-bottom: 32px;
+}
+
+.modal-window input::placeholder {
+  color: var(--text-muted);
+}
+
+.modal-window .checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: var(--base-font-size);
+  color: var(--text-muted);
+}
+
+.modal-window input[type="checkbox"] {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.modal-window .checkbox input {
+  margin-right: 8px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 900;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* без круга
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: var(--text-muted);
+  border: none;
+  font-size: 20px;
+} */
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  transition: background 0.2s ease;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* 768 */
+@media screen and (max-width: 768px) {
+
+  .section {
+    padding: 40px 20px;
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: calc(768px - 2 * 20px);
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.4px;
+  }
+
+  /* Навигация */
+  .navigation {
+    min-height: 74px;
+  }
+
+  .navigation .container {
+    max-width: calc(768px - 2 * 20px);
+  }
+
+  .nav-login {margin-left: 0;}
+
+  #nav ul {
+    gap: 47px;
+  }
+
+  #nav {
+    margin: 0;
+  }
+  
+  .nav-link {
+    padding: 0 !important;
+    letter-spacing: 0.7px;
+  }
+
+  /* Плеер */
+  .video-player {
+    max-width: 604px;
+    height: 359px;
+    border-radius: 13px;
+
+    video {
+      border-radius: 13px;
+    }
+
+    .card-play-button {
+      width: 58px;
+      height: 58px;
+    }
+  }
+
+  /* Обложка */
+  .hero {
+    background: linear-gradient(0deg, rgba(47, 24, 147, 0.3), rgba(47, 24, 147, 0.3)),
+                linear-gradient(180deg, rgba(0, 0, 0, 0.5) 6.36%, rgba(0, 0, 0, 0) 16.49%),
+                url('/img/ilnur-kalimullin-332587-unsplash.jpg') center/cover no-repeat;
+    color: var(--white);
+    min-height: 656px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: 0.4px;
+    margin-bottom: 14px;
+    max-width: 479px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 479px;
+  }
+
+  /* Галерея */
+  .gallery-column img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .gallery-column {
+    gap: 12px;
+    margin-left: 8px;
+    margin-right: 4px;
+    width: 235px;
+    padding: 0;
+  }
+
+  .gallery-column:last-of-type {
+    margin-right: 0;
+  }
+
+  .gallery-column img {
+    width: 235px;
+  }
+  .gallery-column:nth-child(1) img:nth-child(1) { height: 343px; }
+  .gallery-column:nth-child(1) img:nth-child(2) { height: 136px; }
+
+  .gallery-column:nth-child(2) img:nth-child(1) { height: 136px; }
+  .gallery-column:nth-child(2) img:nth-child(2) { height: 343px; }
+
+  .gallery-column:nth-child(3) img:nth-child(1) { height: 239px; }
+  .gallery-column:nth-child(3) img:nth-child(2) { height: 239px; }
+
+  /* Уникальность */
+  .originality {
+    padding: 40px 83px;
+  }
+
+  .originality h2 {
+    text-align: center;
+    color: var(--white);
+    max-width: 594px;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+
+  .originality .video-player {
+    margin-bottom: 32px;
+  }
+
+  .video-cards-row {
+    gap: 12px;
+    margin: auto;
+  }
+
+  .video-card {
+    flex-direction: column;
+    gap: 12px;
+    height: 208px;
+    max-width: 259px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video-card .preview {
+    min-height: 110px;
+    border-radius: 16px;
+  }
+
+  .video-card .play-icon {
+    font-size: 20px;
+  }
+
+  .video-text {
+    gap: 8px;
+  }
+
+  .video-text .label {
+    font-size: 14px;
+  }
+
+  .video-text .desc {
+    font-size: var(--base-font-size);
+    letter-spacing: 0.7px;
+    line-height: 26px;
+    opacity: 0.7;
+    margin: 0;
+  }
+
+  /* Конструктор сайтов */
+  .tech {
+    padding: 0 0 0 20px;
+  }
+
+  .tech .container {
+      max-width: calc(768px - 20px);
+  }
+
+  .tech-row {
+    min-height: 614px;
+    gap: 14px;
+  }
+
+  .tech h2 {
+    letter-spacing: 0.4px;
+    max-width: 420px;
+    margin-bottom: 12px;
+    /* margin-top: -20px; */
+  }
+
+  .tech .lead {
+    max-width: 420px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.7px;
+    margin-bottom: 24px;
+  }
+
+  .tech .btn {
+    max-width: 160px;
+  }
+
+  .tech .text-col {
+    /* align-content: space-between; */
+    margin: 0;
+    max-width: 420px;
+    padding-top: 40px;
+    gap: 40px;
+  }
+
+  .tech .img-col {
+    background-size: cover;
+    background-position: center;
+    background-image: url('/img/building.png');
+    height: 614px;
+    width: 314px;
+  }
+
+  /* .tech-cards {
+    margin-top: 120px;
+  } */
+
+  .tech-cards h6 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 145%;
+  }
+
+  .tech-cards p {
+    letter-spacing: 0.6px;
+    max-width: 195px;
+  }
+
+  .tech .icon svg {
+    display: block;
+  }
+
+  /* Тарифы */
+  .tariff {
+    padding: 40px 20px;
+  }
+
+  .tariff h2 {
+    max-width: 570px;
+    margin-bottom: 24px;
+  }
+
+  .tariff .switcher {
+    gap: 12px;
+  }
+/* 
+  .tariff .col-6 {
+    max-width: 358px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tariff .row {
+    justify-content: space-between;
+  } */
+
+  .tariff-card {
+    /* background-color: #34343D;
+    border: 2px solid #EBEAED; */
+    border-radius: 16px;
+  }
+
+  .tariff-card h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: -5px;
+    width: 100%;
+    max-width: 303px;
+  }
+
+  .tariff-card-header {
+    margin-bottom: 3px;
+  }
+
+  .tariff-card p {
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+    width: 100%;
+    max-width: 303px;
+  }
+
+  .tariff-card-img {
+    width: 100%;
+    max-width: 358px;
+    height: 210px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .tariff-card-text-block {
+    border-top: 2px solid #EBEAED;
+    padding: 32px 32px 32px 24px;
+    width: 100%;
+    max-width: 358px;
+    height: 272px;
+    align-content: space-between;
+  }
+
+  .tariff-card .btn {
+    margin-bottom: 4px;
+  }
+}
+
+/* 375 */
+@media screen and (max-width: 375px) {
+  body, .section {
+    width: 375px;
+    max-width: 375px;
+    overflow-x: hidden;
+  }
+
+  .section {
+    padding: 40px 16px;
+    max-width: 375px;
+  }
+
+  .container {
+    max-width: calc(375px - 2 * 16px);
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.4px;
+  }
+
+  /* Навигация */
+  .navigation {
+    min-height: 74px;
+  }
+
+  .navigation .container {
+    max-width: calc(375px - 2 * 16px);
+    flex-direction: row-reverse;
+  }
+
+  /* Плеер */
+  .video-player {
+    max-width: 343px;
+    height: 204px;
+    border-radius: 7.5px;
+
+    video {
+      border-radius: 13px;
+    }
+
+    .card-play-button {
+      width: 58px;
+      height: 58px;
+    }
+  }
+
+  /* Обложка */
+  .hero {
+    background: linear-gradient(0deg, rgba(47, 24, 147, 0.3), rgba(47, 24, 147, 0.3)),
+                linear-gradient(180deg, rgba(0, 0, 0, 0.5) 6.36%, rgba(0, 0, 0, 0) 16.49%),
+                url('/img/ilnur-kalimullin-332587-unsplash.jpg') center/cover no-repeat;
+    color: var(--white);
+    min-height: 656px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.4px;
+    margin-bottom: 12px;
+    max-width: 343px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 343px;
+  }
+
+  /* Галерея */
+  .gallery-row {
+    flex-wrap: nowrap;
+    width: 375px;
+    max-width: 375px;
+    overflow-x: hidden;
+  }
+
+  .gallery-column img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .gallery-column {
+    gap: 12px;
+    margin-left: 8px;
+    margin-right: 4px;
+    width: 253px;
+    padding: 0;
+  }
+
+  .gallery-column:last-of-type {
+    margin-right: 0;
+  }
+
+  .gallery-column img {
+    width: 253px;
+  }
+  .gallery-column:nth-child(1) img:nth-child(1) { height: 343px; }
+  .gallery-column:nth-child(1) img:nth-child(2) { height: 136px; }
+
+  .gallery-column:nth-child(2) img:nth-child(1) { height: 136px; }
+  .gallery-column:nth-child(2) img:nth-child(2) { height: 343px; }
+
+  .gallery-column:nth-child(3) img:nth-child(1) { height: 239px; }
+  .gallery-column:nth-child(3) img:nth-child(2) { height: 239px; }
+
+  /* Уникальность */
+  .originality {
+    padding: 40px 16px;
+  }
+
+  .originality h2 {
+    text-align: center;
+    color: var(--white);
+    max-width: 343px;
+    margin: auto;
+    margin-bottom: 16px;
+  }
+
+  .originality .video-player {
+    margin-bottom: 24px;
+  }
+
+  .video-cards-row {
+    gap: 12px;
+    margin: auto;
+    flex-wrap: nowrap;
+    width: 343px;
+    max-width: 343px;
+    overflow-x: hidden;
+  }
+
+  .video-card {
+    flex-direction: column;
+    gap: 12px;
+    height: 219px;
+    max-width: 195px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .video-card .preview {
+    width: 195px;
+    min-width: 195px;
+    height: 125px;
+    min-height: 125px;
+    border-radius: 16px;
+  }
+
+  .video-card .play-icon {
+    font-size: 20px;
+  }
+
+  .video-text {
+    gap: 8px;
+  }
+
+  .video-text .label {
+    font-size: 14px;
+  }
+
+  .video-text .desc {
+    font-size: var(--base-font-size);
+    letter-spacing: 0.7px;
+    line-height: 26px;
+    opacity: 0.7;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis; /* должен добавить многоточие, не срабатывает, так как заканчивается на пробел */
+    width: 195px;
+    min-width: 195px;
+  }
+
+  /* Конструктор сайтов */
+  .tech {
+    padding: 40px 16px 0 16px;
+  }
+
+  .tech .container {
+      max-width: calc(768px - 20px);
+  }
+
+  .tech-row {
+    min-height: unset;
+    gap: 48px;
+    flex-direction: column;
+  }
+
+  .tech h2 {
+    letter-spacing: 0.4px;
+    max-width: 420px;
+    margin-bottom: 12px;
+    /* margin-top: -20px; */
+  }
+
+  .tech .lead {
+    max-width: 420px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.7px;
+    margin-bottom: 16px;
+  }
+
+  .tech .btn {
+    max-width: 100%;
+  }
+
+  .tech .text-col {
+    /* align-content: space-between; */
+    margin: 0;
+    max-width: 420px;
+    padding-top: 0;
+    gap: 24px;
+  }
+
+  .tech .img-col {
+    background-size: cover;
+    background-position: center;
+    background-image: url('/img/building.png');
+    height: 264px;
+    /* width: 375px; */
+    width: calc(100% + 2 * 16px);
+    min-width: 375px;
+    margin-left: -16px;
+  }
+
+  /* .tech-cards {
+    margin-top: 120px;
+  } */
+
+  .tech-cards h6 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 145%;
+    margin-bottom: 8px;
+  }
+
+  .tech-cards p {
+    letter-spacing: 0.4px;
+    max-width: 343px;
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+
+  .tech .col-sm-6:last-of-type {
+    margin-top: 28px;
+  }
+
+  .tech .icon svg {
+    display: block;
+  }
+
+  /* Тарифы */
+  .tariff {
+    padding: 40px 16px;
+  }
+
+  .tariff h2 {
+    max-width: 538px;
+    margin-bottom: 16px;
+  }
+
+  .tariff .switcher {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  /* .tariff-card {
+    background-color: #34343D;
+    border: 2px solid #EBEAED;
+    border-radius: 16px;
+  } */
+
+  .tariff-card h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: -5px;
+    width: 100%;
+    max-width: 303px;
+  }
+
+  .tariff-card-header {
+    margin-bottom: 3px;
+  }
+
+  .tariff-card p {
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+    width: 100%;
+    max-width: 303px;
+  }
+
+  .tariff-card-img {
+    width: 100%;
+    max-width: 343px;
+    height: 210px;
+  }
+
+  .tariff-card-text-block {
+    border-top: 2px solid #EBEAED;
+    padding: 24px 24px 24px 16px;
+    width: 100%;
+    max-width: 343px;
+    height: unset;
+    align-content: space-between;
+  }
+
+  .tariff-card .btn {
+    margin-bottom: 4px;
+  } 
+}
