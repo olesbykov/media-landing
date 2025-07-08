@@ -560,9 +560,100 @@ button {
   background: rgba(255, 255, 255, 0.2);
 }
 
+/* до 1400 */
+
+@media screen and (max-width:1400px) {
+
+  /* Тарифы */
+  .tariff {
+    padding: 40px 20px;
+  }
+
+  .tariff h2 {
+    max-width: 570px;
+    margin-bottom: 24px;
+  }
+
+  .tariff .switcher {
+    gap: 12px;
+  }
+/* 
+  .tariff .col-6 {
+    max-width: 358px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tariff .row {
+    justify-content: space-between;
+  } */
+
+  .tariff-card {
+    /* background-color: #34343D;
+    border: 2px solid #EBEAED; */
+    border-radius: 16px;
+    max-width: 358px;
+    margin: auto;
+  }
+
+  .tariff-card h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: -5px;
+    width: 100%;
+    max-width: 303px;
+  }
+
+  .tariff-card-header {
+    margin-bottom: 3px;
+  }
+
+  .tariff-card p {
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+    width: 100%;
+    max-width: 303px;
+  }
+
+  .tariff-card-img {
+    width: 100%;
+    max-width: 358px;
+    height: 210px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .tariff-card-text-block {
+    border-top: 2px solid #EBEAED;
+    padding: 32px 32px 32px 24px;
+    width: 100%;
+    max-width: 358px;
+    height: 272px;
+    align-content: space-between;
+  }
+
+  .tariff-card .btn {
+    margin-bottom: 4px;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1400px) {
+  .gallery-column {
+    max-width: 30%;
+  }
+
+  .video-card  {
+    width: 47%;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .tech .img-col {
+    height: 985px;
+  }
+}
 
 /* 768 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
 
   .section {
     padding: 40px 20px;
@@ -798,36 +889,32 @@ button {
   .tech .icon svg {
     display: block;
   }
+}
 
+
+/* до 768 */
+
+@media screen and (max-width:761px) {
   /* Тарифы */
   .tariff {
-    padding: 40px 20px;
+    padding: 40px 16px;
   }
 
   .tariff h2 {
-    max-width: 570px;
-    margin-bottom: 24px;
+    max-width: 538px;
+    margin-bottom: 16px;
   }
 
   .tariff .switcher {
     gap: 12px;
-  }
-/* 
-  .tariff .col-6 {
-    max-width: 358px;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 24px;
   }
 
-  .tariff .row {
-    justify-content: space-between;
-  } */
-
-  .tariff-card {
-    /* background-color: #34343D;
-    border: 2px solid #EBEAED; */
+  /* .tariff-card {
+    background-color: #34343D;
+    border: 2px solid #EBEAED;
     border-radius: 16px;
-  }
+  } */
 
   .tariff-card h5 {
     font-size: 22px;
@@ -850,22 +937,122 @@ button {
 
   .tariff-card-img {
     width: 100%;
-    max-width: 358px;
+    max-width: 343px;
     height: 210px;
-    border-radius: 16px 16px 0 0;
   }
 
   .tariff-card-text-block {
     border-top: 2px solid #EBEAED;
-    padding: 32px 32px 32px 24px;
+    padding: 24px 24px 24px 16px;
     width: 100%;
-    max-width: 358px;
-    height: 272px;
+    max-width: 343px;
+    height: unset;
     align-content: space-between;
   }
 
   .tariff-card .btn {
     margin-bottom: 4px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 761px) {
+    .navigation .container {
+      padding: 0 20px;
+    }
+
+    .gallery-column {
+        max-width: 30%;
+    }
+
+    .tariff .row {
+      flex-direction: column;
+    }
+
+    .tariff .row .col-sm-6 {
+      margin: 30px auto;
+      width: auto;
+    }
+}
+
+/* до 576 */
+@media screen and (max-width: 576px) {
+  /* Конструктор сайтов */
+  .tech {
+    padding: 40px 16px 0 16px;
+  }
+
+  .tech .container {
+      max-width: calc(375px - 20px);
+  }
+
+  .tech-row {
+    min-height: unset;
+    gap: 48px;
+    flex-direction: column;
+  }
+
+  .tech h2 {
+    letter-spacing: 0.4px;
+    max-width: 420px;
+    margin-bottom: 12px;
+    /* margin-top: -20px; */
+  }
+
+  .tech .lead {
+    max-width: 420px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.7px;
+    margin-bottom: 16px;
+  }
+
+  .tech .btn {
+    max-width: 100%;
+  }
+
+  .tech .text-col {
+    /* align-content: space-between; */
+    margin: 0;
+    max-width: 420px;
+    padding-top: 0;
+    gap: 24px;
+  }
+
+  .tech .img-col {
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/building.png');
+    height: 264px;
+    /* width: 375px; */
+    width: calc(100% + 2 * 16px);
+    min-width: 375px;
+    margin-left: -16px;
+  }
+
+  /* .tech-cards {
+    margin-top: 120px;
+  } */
+
+  .tech-cards h6 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 145%;
+    margin-bottom: 8px;
+  }
+
+  .tech-cards p {
+    letter-spacing: 0.4px;
+    max-width: 343px;
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+
+  .tech .col-sm-6:last-of-type {
+    margin-top: 28px;
+  }
+
+  .tech .icon svg {
+    display: block;
   }
 }
 
@@ -1046,141 +1233,17 @@ button {
     min-width: 195px;
   }
 
-  /* Конструктор сайтов */
+  
+  /* Конструктор сайтов (см. max-width: 576px) */
   .tech {
     padding: 40px 16px 0 16px;
   }
 
   .tech .container {
-      max-width: calc(768px - 20px);
-  }
-
-  .tech-row {
-    min-height: unset;
-    gap: 48px;
-    flex-direction: column;
-  }
-
-  .tech h2 {
-    letter-spacing: 0.4px;
-    max-width: 420px;
-    margin-bottom: 12px;
-    /* margin-top: -20px; */
-  }
-
-  .tech .lead {
-    max-width: 420px;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.7px;
-    margin-bottom: 16px;
-  }
-
-  .tech .btn {
-    max-width: 100%;
-  }
-
-  .tech .text-col {
-    /* align-content: space-between; */
-    margin: 0;
-    max-width: 420px;
-    padding-top: 0;
-    gap: 24px;
-  }
-
-  .tech .img-col {
-    background-size: cover;
-    background-position: center;
-    background-image: url('../img/building.png');
-    height: 264px;
-    /* width: 375px; */
-    width: calc(100% + 2 * 16px);
-    min-width: 375px;
-    margin-left: -16px;
-  }
-
-  /* .tech-cards {
-    margin-top: 120px;
-  } */
-
-  .tech-cards h6 {
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 145%;
-    margin-bottom: 8px;
-  }
-
-  .tech-cards p {
-    letter-spacing: 0.4px;
-    max-width: 343px;
-    margin-top: -10px;
-    margin-bottom: 0;
+      max-width: calc(375px - 20px);
   }
 
   .tech .col-sm-6:last-of-type {
     margin-top: 28px;
   }
-
-  .tech .icon svg {
-    display: block;
-  }
-
-  /* Тарифы */
-  .tariff {
-    padding: 40px 16px;
-  }
-
-  .tariff h2 {
-    max-width: 538px;
-    margin-bottom: 16px;
-  }
-
-  .tariff .switcher {
-    gap: 12px;
-    margin-bottom: 24px;
-  }
-
-  /* .tariff-card {
-    background-color: #34343D;
-    border: 2px solid #EBEAED;
-    border-radius: 16px;
-  } */
-
-  .tariff-card h5 {
-    font-size: 22px;
-    font-weight: 500;
-    margin-top: -5px;
-    width: 100%;
-    max-width: 303px;
-  }
-
-  .tariff-card-header {
-    margin-bottom: 3px;
-  }
-
-  .tariff-card p {
-    opacity: 0.8;
-    letter-spacing: 0.5px;
-    width: 100%;
-    max-width: 303px;
-  }
-
-  .tariff-card-img {
-    width: 100%;
-    max-width: 343px;
-    height: 210px;
-  }
-
-  .tariff-card-text-block {
-    border-top: 2px solid #EBEAED;
-    padding: 24px 24px 24px 16px;
-    width: 100%;
-    max-width: 343px;
-    height: unset;
-    align-content: space-between;
-  }
-
-  .tariff-card .btn {
-    margin-bottom: 4px;
-  } 
 }
