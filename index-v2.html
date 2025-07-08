@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Превратите свои идеи в реальные достижения</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- стили -->
+  <link href="styles/style.css" rel="stylesheet"/>
+  <link href="styles/style-v2.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- Навигация -->
+<nav class="navbar navbar-expand-sm bg-white shadow-sm navigation">
+  <div class="container">
+    <!-- <a class="navbar-brand fw-bold" href="#">Логотип</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-lg-auto mb-md-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Изображения</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Видео</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">3D модели</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-pink nav-login" href="#">Войти</a>
+  </div>
+</nav>
+
+<!-- Обложка -->
+<section class="section hero d-flex flex-column">
+  <div class="container mt-auto">
+    <div class="row">
+      <div class="col-12 offset-xxl-1 col-sm-9">
+        <h1 class="display-5 fw-bold">Превратите свои идеи в реальные достижения</h1>
+        <p class="lead mb-0">Теперь у вас под рукой всегда есть нужные изображения, видео, музыка, 3D-модели, редакционные материалы и авторские продукты.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Галерея -->
+<section class="section gallery">
+  <div class="container">
+    <div class="row g-3 gallery-row">
+      <div class="col-4 d-flex flex-column gallery-column"><img src="img/img1.png" class="img-fluid rounded" alt=""><img src="img/img4.png" class="img-fluid rounded" alt=""></div>
+      <div class="col-4 d-flex flex-column gallery-column"><img src="img/img2.png" class="img-fluid rounded" alt=""><img src="img/img5.png" class="img-fluid rounded" alt=""></div>
+      <div class="col-4 d-flex flex-column gallery-column"><img src="img/img3.png" class="img-fluid rounded" alt=""><img src="img/img6.png" class="img-fluid rounded" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<!-- Уникальность -->
+<section class="section section-dark text-white text-center originality"><!-- bg-dark -->
+  <div class="container">
+    <h2>Поможем сделать ваш продукт уникальным</h2>
+    <div class="video-player position-relative">
+      <video id="promoVideo" class="w-100 rounded" poster="img/preview.png">
+        <source src="video.mp4" type="video/mp4">
+        Ваш браузер не поддерживает воспроизведение видео.
+      </video>
+      <button class="card-play-button d-flex align-items-center justify-content-center" id="playButton" aria-label="Play video">
+        <i class="fa fa-play"></i>
+      </button>
+    </div>
+
+    <div class="row gx-5 gy-4 justify-content-start justify-content-md-center video-cards-row">
+      <!-- Карточка 1 -->
+      <div class="d-flex align-items-start align-items-md-center video-card">
+        <div class="preview d-flex align-items-center justify-content-center" style="background-image: url('img/daniel-olah-1079449-unsplash.jpg');" data-video="video1.mp4">
+          <i class="fa fa-play play-icon"></i>
+        </div>
+        <div class="video-text ms-0 ms-md-4 d-flex justify-content-center">
+          <h6 class="label">Эксклюзив</h6>
+          <p class="desc">Используйте уникальный контент в своих целях</p>
+        </div>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="d-flex align-items-start align-items-md-center video-card">
+        <div class="preview d-flex align-items-center justify-content-center" style="background-image: url('img/jason-leung-397006-unsplash.jpg');" data-video="video2.mp4">
+          <i class="fa fa-play play-icon"></i>
+        </div>
+        <div class="video-text ms-0 ms-md-4 d-flex justify-content-center">
+          <h6 class="label">Высокое качество</h6>
+          <p class="desc">Изображения и видео в высочайшем качестве</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Конструктор сайтов -->
+<section class="section tech bg-white">
+  <div class="container">
+    <div class="d-flex tech-row">
+      <div class="d-flex flex-column flex-wrap text-col"><!--  -->
+        <div class="d-flex flex-column">
+          <h2>Создавайте свои сайты в пару кликов</h2>
+          <p class="lead">Мы создали новый продукт, который поможет дизайнерам, разработчикам и небольшим стартапам создать свой сайт быстро и просто.</p>
+          <button class="btn btn-pink" onclick="openModal()">Подробнее</button>
+          <!-- <a href="#" class="btn btn-pink">Подробнее</a> -->
+        </div>
+        <div class="row tech-cards">
+          <div class="col-sm-6 d-flex flex-column gap-2">
+            <div class="icon mb-3">
+              <!-- Иконка комментария -->
+              <svg width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.8571 18.143C17.8571 16.162 16.2667 14.5716 14.2857 14.5716C12.3047 14.5716 10.7143 16.162 10.7143 18.143C10.7143 20.1241 12.3047 21.7145 14.2857 21.7145C16.2667 21.7145 17.8571 20.1241 17.8571 18.143ZM28.5714 18.143C28.5714 16.162 26.981 14.5716 25 14.5716C23.019 14.5716 21.4286 16.162 21.4286 18.143C21.4286 20.1241 23.019 21.7145 25 21.7145C26.981 21.7145 28.5714 20.1241 28.5714 18.143ZM39.2857 18.143C39.2857 16.162 37.6953 14.5716 35.7143 14.5716C33.7333 14.5716 32.1429 16.162 32.1429 18.143C32.1429 20.1241 33.7333 21.7145 35.7143 21.7145C37.6953 21.7145 39.2857 20.1241 39.2857 18.143ZM25 3.85732C36.6071 3.85732 46.4286 10.3863 46.4286 18.143C46.4286 25.8997 36.6071 32.4287 25 32.4287C23.8002 32.4287 22.5725 32.345 21.3728 32.2055L19.7824 32.0381L18.5826 33.0984C16.2946 35.1073 13.7277 36.6977 10.9096 37.8696C11.635 36.5861 12.3326 35.0515 12.8627 33.0705L13.6161 30.3919L11.1886 28.9968C6.36161 26.2625 3.57143 22.3004 3.57143 18.143C3.57143 10.3863 13.3929 3.85732 25 3.85732ZM50 18.143C50 8.2937 38.8114 0.285889 25 0.285889C11.1886 0.285889 0 8.2937 0 18.143C0 23.8071 3.68304 28.8573 9.4308 32.1218C8.11942 36.7814 6.11049 38.4555 4.35268 40.4366C3.93415 40.9388 3.45982 41.3573 3.59933 42.0549C3.59933 42.0549 3.59933 42.0549 3.59933 42.0828C3.73884 42.6966 4.24107 43.143 4.79911 43.143C4.82701 43.143 4.88281 43.143 4.93862 43.143C6.02679 43.0035 7.11496 42.8082 8.11942 42.5292C12.9464 41.3015 17.2991 39.0136 20.9542 35.777C22.2656 35.9165 23.6328 36.0002 25 36.0002C38.8114 36.0002 50 28.0203 50 18.143Z" fill="#EBEAED"/>
+              </svg>
+            </div>
+            <h6>Bootstrap 4</h6>
+            <p>HTML верстка основана на одном из самых распространенных и надежных фреймворков</p>
+          </div>
+          <div class="col-sm-6 d-flex flex-column gap-2">
+            <div class="icon mb-3">
+              <!-- Иконка HTML5 -->
+              <svg width="40" height="46" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32.029 13.8003H13.2232L13.6417 18.8505H31.6105L30.2154 34.0291L20.1987 36.7914V36.8193H20.0871L9.98661 34.0291L9.37277 26.2724H14.2556L14.6183 30.1786L20.0871 31.6574L25.5837 30.1786L26.1975 23.817H9.12165L7.81027 8.91748H32.4754L32.029 13.8003ZM0.5 0.714355L4.07143 40.8371L20.0871 45.3572L36.2143 40.8371L39.7857 0.714355H0.5Z" fill="#EBEAED"/>
+              </svg>
+            </div>
+            <h6>HTML5 & CSS3</h6>
+            <p>Для достижения наилучшего результата мы использовали только проверенные временем технологии.</p>
+          </div>
+        </div>
+      </div>
+      <div class="img-col">
+        <!-- <img src="/img/building.png" class="img-fluid rounded" alt=""> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Тарифы -->
+<section class="section section-dark text-white tariff">
+  <div class="container">
+    <h2 class="text-center">У нас есть два тарифа</h2>
+    <div class="switcher d-flex justify-content-center">
+      <label>Месяц</label>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="billingToggle">
+      </div>
+      <label>Год</label>
+    </div>
+
+    <div class="row g-4 justify-content-md-center">
+      <div class="col-12 col-sm-6">
+        <div class="tariff-card">
+          <div class="tariff-card-img tariff-card-img-first">
+            <!-- <img src="/img/building.png" class="img-fluid rounded" alt=""> -->
+          </div>
+          <div class="tariff-card-text-block d-flex flex-wrap">
+            <div class="tariff-card-text">
+              <div class="tariff-card-header d-flex align-items-center">
+                <div class="tariff-name"><h5>Оптимальный</h5></div>
+                <div class="tariff-price"><h5><span class="price" data-month="500">500</span> ₽</h5></div>
+              </div>
+              <!-- <h5>Оптимальный 500 ₽</h5> -->
+              <p>Редактируйте фото и видео в режиме онлайн. Создавайте одностраничные сайты из готовых компонентов</p>
+            </div>
+            <button class="btn btn-pink w-100" onclick="openModal()">Начать бесплатно</button>
+            <!-- <a href="#" class="btn btn-pink w-100" onclick="openModal()">Начать бесплатно</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="tariff-card">
+          <div class="tariff-card-img tariff-card-img-second">
+            <!-- <img src="/img/building.png" class="img-fluid rounded" alt=""> -->
+          </div>
+          <div class="tariff-card-text-block d-flex flex-wrap">
+            <div class="tariff-card-text">
+              <div class="tariff-card-header d-flex align-items-center">
+                <div class="tariff-name"><h5>Профи</h5></div>
+                <div class="tariff-price"><h5><span class="price" data-month="1000">1 000</span> ₽</h5></div>
+              </div>
+              <!-- <h5>Профи 1 000 ₽</h5> -->
+              <p>Редактируйте фото и видео в режиме онлайн. Создавайте одностраничные и многостраничные сайты из готовых компонентов</p>
+            </div>
+            <button class="btn btn-outline-light w-100" onclick="openModal()">Начать бесплатно</button>
+            <!-- <a href="#" class="btn btn-outline-light w-100" onclick="openModal()">Начать бесплатно</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Модалка: форма --> 
+<div class="overlay" id="overlay" onclick="closeModal()"></div>
+
+<div class="modal-window" id="modal-window">
+  <!-- <button class="close-btn" onclick="closeModal()">×</button> -->
+  <button class="close-btn" onclick="closeModal()" aria-label="Закрыть модальное окно">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="20" fill="white" fill-opacity="0.1"/>
+      <path opacity="0.6" d="M13 13L27 27" stroke="white" stroke-width="2"/>
+      <path opacity="0.6" d="M13 27L27 13" stroke="white" stroke-width="2"/>
+    </svg>
+  </button>
+  <div class="modal-window-header" id="modal-window-header">Оставить заявку</div>
+  <div class="modal-window-subtext">Менеджеры перезвонят или напишут в течение дня.<br>Поможем определиться и протестировать продукт.<br>Без спама и навязчивости</div>
+  <input type="email" placeholder="Email" />
+  <input type="text" placeholder="Иван Иванов" />
+  <input type="tel" placeholder="Телефон" />
+  <button class="btn btn-pink" style="width:100%; margin-top: 20px;" onclick="submitForm()">Отправить</button>
+  <label class="checkbox">
+    <input type="checkbox" />
+    Я соглашаюсь на обработку персональных данных и присоединяюсь к регламенту СБИС
+  </label>
+</div>
+
+<!-- Скрипты -->
+<script src="js/price.js"></script>
+<script src="js/modal.js?t=19-30"></script>
+<script src="js/video.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

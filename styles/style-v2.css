@@ -1,0 +1,29 @@
+.hero, .originality, .tariff {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.tariff-card {
+  width: 370px;
+  margin: auto;
+}
+
+
+@media screen and (max-width:1400px) {
+  .tariff-card {
+    border-radius: 16px;
+    max-width: 358px;
+  }
+}
+
+@media screen and (max-width:761px) {
+  .tariff-card {
+    max-width: 343px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tech .container, .tech .text-col {
+    max-width: calc(768px - 20px);
+  }
+}
